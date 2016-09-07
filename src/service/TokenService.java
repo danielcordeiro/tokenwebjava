@@ -12,6 +12,6 @@ public class TokenService {
 		if(idContrato == null || idContrato.isEmpty() || idUser == null || data == null){
 			throw new IllegalArgumentException("Campo obrigatório não informado");
 		}
-		return UUID.randomUUID().toString();
+		return UUID.randomUUID().toString().substring(0, 6);
 	}
 }
